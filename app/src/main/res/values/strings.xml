@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MobileIronTest</string>
+
+    <string name="no_tweets">No tweets found. Search something different!</string>
+    <string name="no_internet_connection">No internet connection</string>
+
+    <string name="err_empty_search">Please search valid value</string>
+    <string name="msg_searching">Searching</string>
+
+    <string name="msg_search"> Enter word and click search icon</string>
+    <string name="err_operation">Error. Try again</string>
+    <string name="msg_tweets_saved">Tweets saved for offline search</string>
+    <string name="msg_offline_search">No internet, Searching in saved results</string>
+
+</resources>

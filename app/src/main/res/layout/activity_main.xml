@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobileiron.com.mobileirontest.ui.Search.MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonSearch"
+        android:src="@android:drawable/ic_menu_search"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageButtonSearch"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:singleLine="true"
+        android:hint="@string/msg_search"
+       />
+
+    <TextView
+        android:id="@+id/textviewNotweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="@string/no_tweets"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_tweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/editTextSearch"/>
+
+</RelativeLayout>
